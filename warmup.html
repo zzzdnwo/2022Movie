@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1></h1>
+        <button id="btn">Click  me!</button>
+        <script>
+            const button = document.getElementById("btn");
+            const tit = document.querySelector('h1');
+            let num = 0;
+            tit.innerText = num;
+
+            function handleClick(){
+                num++;
+               tit.innerText = num;
+            }
+
+            button.addEventListener("click", handleClick);
+        </script>
+    </body>
+</html>
